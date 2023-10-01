@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input id="busca" type="text"> 
-    <button onclick="pokeapi()"> Buscar</button>
+
+<div class="pokedex">
+
+    <div class="buscar">
+        <input id="busca" placeholder="Buscar Pokemon" type="text"> 
+        <button onclick="pokeapi()"> Buscar</button>
+    </div>
+
+    <div class="pokemon" style="text-transform: capitalize">
+     
+        <span id="nome"></span>
+        <span id="id"></span>
+    </div>
     
-    <span id="nome" style="text-transform: capitalize"></span>
+    <div class="foto">
+        <img src=""  id="img_pokemon">  </img>
+    </div>
+
+</div>
 
 
     <script src="app.js"></script>

@@ -1,0 +1,44 @@
+body {
+    background:url(background.jpeg)no-repeat ;
+    background-size: cover;
+
+    width: 100vh;
+    height: 100vh;
+}
+
+.pokedex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(pokedex.png)no-repeat;
+    
+}
+
+#img_pokemon {
+    position: fixed;
+    height: 300px;
+    width: 400px;
+    left: 110px;
+    top: 120px;
+}
+
+#id{
+    position: fixed;
+    width: 400px;
+    left: 270px;
+    top: 490px;
+}
+#nome{
+    position: fixed;
+    width: 400px;
+    left: 650px;
+    top: 230px;
+}
+.buscar{
+    position: fixed;
+    width: 400px;
+    left: 200px;
+    top: 600px;
+}
