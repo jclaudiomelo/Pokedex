@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento com CSS</title>
+    <style>
+        /* Estilo para a div que conterá a imagem de fundo */
+        .background-div {
+            position: absolute; /* Posição absoluta para posicionamento preciso */
+            top: 0;
+            left: 0;
+            width: 100%; /* Preenche a largura da janela */
+            height: 100%; /* Preenche a altura da janela */
+            background-image: url('background.jpg'); /* URL da imagem de fundo */
+            background-size: cover; /* Redimensiona a imagem para cobrir toda a div */
+            z-index: 1; /* Z-index define a ordem de empilhamento */
+        }
+
+        /* Estilo para a div que conterá a imagem sobreposta */
+        .overlay-div {
+            position: fixed; /* Posição fixa para ficar sempre visível */
+            top: 20px; /* Posição do topo em relação à janela */
+            left: 20px; /* Posição da esquerda em relação à janela */
+            z-index: 2; /* Z-index maior para estar sobre a div de fundo */
+        }
+    </style>
+</head>
+<body>
+    <!-- Div de fundo com a imagem de fundo -->
+    <div class="background-div"></div>
+
+    <!-- Div sobreposta com a imagem -->
+    <div class="overlay-div">
+        <img src="pokedex.png"Imagem Sobreposta">
+    </div>
+</body>
+</html>
