@@ -5,7 +5,7 @@
 Este é um projeto simples de Pokédex que usa a  **[API PokeAPI](https://pokeapi.co/)** 
 Para obter informações sobre Pokémon. Foi desenvolvido com HTML, CSS e JavaScript e permite que você pesquise e visualize detalhes sobre diferentes Pokémon.
 
-![Screenshot](../API-POKEMON/ASSETS/img/prev.jpeg)
+![Screenshot](../ASSETS/img/prev.jpeg)
 
 ## Funcionalidades
 
