@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Pokédex com HTML, CSS e JavaScript
 
@@ -21,3 +22,7 @@ Clone este repositório para o seu computador:
 ```bash
 git clone https://github.com/jclaudiomelo/Pokedex.git
 
+=======
+# Pokedex
+Um pokedex utilizando api https://pokeapi.co/
+>>>>>>> 0895e964a7b2ab3e387ed9ba341d1b88921f9c9e
