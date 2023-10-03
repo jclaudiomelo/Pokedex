@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link rel="stylesheet" href="ASSETS/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="ASSETS/css/style.css" />
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="buscar">
+        <input id="buscar" placeholder="Buscar Pokemon" type="text" />
+        <button onclick="buscarPokemon('buscar')">Buscar</button>
+      </div>
 
-<div class="pokedex">
-
-    <div class="buscar">
-        <input id="buscar" placeholder="Buscar Pokemon" type="text"> 
-        <button onclick="buscarPokemon('buscar')"> Buscar </button>
-    </div>
-
-    <div class="pokemon" style="text-transform: capitalize">
-        <button id="nextButton" onclick="buscarPokemon('next')" >></button>
+      <div class="pokemon" style="text-transform: capitalize">
+        <button id="nextButton" onclick="buscarPokemon('next')">></button>
         <button id="backButton" onclick="buscarPokemon('prev')"><</button>
         <button id="ButtonPower" onclick="buscarPokemon('ligar')">Reset</button>
         <button id="butt_img_back" onclick="buscarPokemon('img_back')"></button>
-        <button id="butt_img_front" onclick="buscarPokemon('img_front')"></button>
+        <button
+          id="butt_img_front"
+          onclick="buscarPokemon('img_front')"
+        ></button>
         <span id="nome"></span>
         <span id="id"></span>
-       
-    </div>
-    
-    <div class="foto">
-        <img  id="img_pokemon">
-        <img  id="img_back">
-    </div>
+      </div>
 
-</div>
-
+      <div class="foto">
+        <img id="img_pokemon" />
+        <img id="img_back" />
+      </div>
+    </div>
 
     <script src="ASSETS/js/app.js"></script>
-</body>
+  </body>
 </html>
