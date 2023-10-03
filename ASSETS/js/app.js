@@ -30,7 +30,6 @@ function buscarPokemon(paramater) {
   }
 
   var url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-
   fetch(url)
     .then((resp) => resp.json())
     .then((data) => {
@@ -38,6 +37,9 @@ function buscarPokemon(paramater) {
       document.getElementById("id").textContent = data.id;
       // var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
       var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`;
+      
+      console.log(data.types[0].type.name)
+      document.getElementById("type").textContent = data.types[0].type.name;
       document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {

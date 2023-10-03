@@ -40,6 +40,12 @@ body {
     left: 540px;
     top: 200px;
 }
+#type{
+    font-size: 25px;
+    position: fixed;
+    left: 540px;
+    top: 150px;
+}
 
 .buscar {
     position: fixed;
