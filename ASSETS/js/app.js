@@ -36,7 +36,8 @@ function buscarPokemon(paramater) {
     .then((data) => {
       document.getElementById("nome").textContent = data.name;
       document.getElementById("id").textContent = data.id;
-      var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
+      // var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
+      var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`;
       document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {

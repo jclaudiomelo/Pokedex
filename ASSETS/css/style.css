@@ -15,6 +15,7 @@ body {
 }
 
 #img_pokemon {
+    border-radius: 30px;
     position: fixed;
     height: 150px;
     width: 260px;
@@ -23,8 +24,11 @@ body {
 }
 
 #id {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 25px;  
+    font-weight: 800;
     position: fixed;
-    width: 400px;
+ 
     left: 170px;
     top: 459px;
 }
