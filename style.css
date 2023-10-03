@@ -16,11 +16,18 @@ body {
 
 #img_pokemon {
     position: fixed;
-    height: 180px;
-    width: 280px;
+    height: 150px;
+    width: 260px;
+    left: 69px;
+    top: 159px;
+}
+/* #img_back {
+    position: fixed;
+    height: 160px;
+    width: 260px;
     left: 58px;
     top: 148px;
-}
+} */
 
 #id {
     position: fixed;
@@ -44,6 +51,7 @@ body {
 }
 
 #nextButton {
+    background: none;
     position: fixed;
     width: 25px;
     height: 25px;
@@ -52,6 +60,7 @@ body {
 }
 
 #backButton {
+    background: none;
     position: fixed;
     width: 25px;
     height: 25px;
@@ -60,32 +69,32 @@ body {
 }
 
 #ButtonPower {
+
+    border-radius: 10px;
+    background: none;
     position: fixed;
-    width: 35px;
-    height: 25px;
-    left: 125px;
-    top: 401px;
+    width: 50px;
+    height: 15px;
+    left: 121px;
+    top: 407px;
 }
 
-#img_back {
-    position: fixed;
-    height: 180px;
-    width: 280px;
-    left: 58px;
-    top: 148px;
-}
+
 
 #butt_img_front {
+    background: none;
     position: fixed;
     width: 25px;
     height: 25px;
     left: 294px;
     top: 400px;
 }
-#butt_img_back{
+
+#butt_img_back {
+    background: none;
     position: fixed;
     width: 25px;
     height: 25px;
-    left: 290px;
-    top: 465px;
+    left: 293px;
+    top: 462px;
 }
