@@ -1,11 +1,12 @@
-<<<<<<< HEAD
-
 # Pokédex com HTML, CSS e JavaScript
+
+
+[PAGINA DA POKEDEX](https://jclaudiomelo.github.io/Pokedex/)
 
 Este é um projeto simples de Pokédex que usa a  **[API PokeAPI](https://pokeapi.co/)** 
 Para obter informações sobre Pokémon. Foi desenvolvido com HTML, CSS e JavaScript e permite que você pesquise e visualize detalhes sobre diferentes Pokémon.
 
-![Screenshot](../API-POKEMON/ASSETS/img/prev.jpeg)
+![Screenshot](https://github.com/jclaudiomelo/Pokedex/blob/main/ASSETS/img/prev.jpeg)
 
 ## Funcionalidades
 
@@ -22,7 +23,3 @@ Clone este repositório para o seu computador:
 ```bash
 git clone https://github.com/jclaudiomelo/Pokedex.git
 
-=======
-# Pokedex
-Um pokedex utilizando api https://pokeapi.co/
->>>>>>> 0895e964a7b2ab3e387ed9ba341d1b88921f9c9e
