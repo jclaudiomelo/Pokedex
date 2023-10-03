@@ -1,5 +1,5 @@
 body {
-    background: url(background.jpeg)no-repeat;
+    background: url(../img/background.jpeg)no-repeat;
     background-size: cover;
     /* display: flex; */
 
@@ -11,7 +11,7 @@ body {
     position: absolute;
     width: 758px;
     height: 512px;
-    background: url(pokedex.png)no-repeat;
+    background: url(../img/pokedex.png)no-repeat;
 }
 
 #img_pokemon {
@@ -21,13 +21,6 @@ body {
     left: 69px;
     top: 159px;
 }
-/* #img_back {
-    position: fixed;
-    height: 160px;
-    width: 260px;
-    left: 58px;
-    top: 148px;
-} */
 
 #id {
     position: fixed;
