@@ -11,17 +11,18 @@
 <div class="pokedex">
 
     <div class="buscar">
-        <input id="busca" placeholder="Buscar Pokemon" type="text"> 
-        <button onclick="pokeapi()"> Buscar</button>
+        <input id="buscar" placeholder="Buscar Pokemon" type="text"> 
+        <button onclick="buscarPokemon('buscar')"> Buscar </button>
     </div>
 
     <div class="pokemon" style="text-transform: capitalize">
-        <button id="nextButton" onclick="NextOrPrev('next')" >></button>
-        <button id="backButton" onclick="NextOrPrev('prev')"><</button>
-        <button id="ButtonPower" onclick="NextOrPrev('ligar')">power</button>
+        <button id="nextButton" onclick="buscarPokemon('next')" >></button>
+        <button id="backButton" onclick="buscarPokemon('prev')"><</button>
+        <button id="ButtonPower" onclick="buscarPokemon('ligar')">power</button>
+        <button id="url_img_back" onclick="buscarPokemon('img_back')">nImg</button>
         <span id="nome"></span>
         <span id="id"></span>
-        <span id="idg">id</span>
+       
     </div>
     
     <div class="foto">
