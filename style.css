@@ -1,11 +1,9 @@
-
-
 body {
-    background:url(background.jpeg)no-repeat ;
+    background: url(background.jpeg)no-repeat;
     background-size: cover;
     /* display: flex; */
-    
-  
+
+
 }
 
 .pokedex {
@@ -24,32 +22,36 @@ body {
     top: 148px;
 }
 
-#id{
+#id {
     position: fixed;
     width: 400px;
     left: 170px;
     top: 459px;
 }
-#nome{
+
+#nome {
     position: fixed;
     width: 400px;
     left: 650px;
     top: 230px;
 }
-.buscar{
+
+.buscar {
     position: fixed;
     width: 400px;
     left: 200px;
     top: 600px;
 }
-#nextButton{
+
+#nextButton {
     position: fixed;
     width: 25px;
     height: 25px;
     left: 323px;
     top: 431px;
 }
-#backButton{
+
+#backButton {
     position: fixed;
     width: 25px;
     height: 25px;
@@ -57,17 +59,33 @@ body {
     top: 431px;
 }
 
-#ButtonPower{
+#ButtonPower {
     position: fixed;
     width: 35px;
     height: 25px;
     left: 125px;
     top: 401px;
 }
-#url_img_back{
+
+#img_back {
+    position: fixed;
+    height: 180px;
+    width: 280px;
+    left: 58px;
+    top: 148px;
+}
+
+#butt_img_front {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    left: 294px;
+    top: 400px;
+}
+#butt_img_back{
     position: fixed;
     width: 25px;
     height: 25px;
     left: 290px;
-    top: 401px;
+    top: 465px;
 }
