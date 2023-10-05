@@ -50,3 +50,25 @@ function buscarPokemon(paramater) {
       alert(error);
     });
 }
+
+
+function redirecionarComBaseNaOrientacao() {
+  if (window.innerHeight > window.innerWidth) {
+    // Se a altura for maior que a largura, estamos na orientação vertical
+    window.location.href = 'index.html';
+  } else {
+    // Caso contrário, estamos na orientação horizontal
+    window.location.href =  'index-closed.html';
+  }
+}
+
+window.addEventListener('orientationchange', redirecionarComBaseNaOrientacao);
+
+
+
+// if(window.location.href == 'index.html' && window.innerHeight > window.innerWidth){
+//   window.location.href = 'index-closed.html';
+ 
+// }if(window.location.href == 'index-close.html' && window.innerHeight < window.innerWidth){
+//   window.location.href = 'index.html';
+// }
