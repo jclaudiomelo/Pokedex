@@ -1,103 +1,65 @@
 body {
-    background: url(../img/background.jpeg)no-repeat;
-    background-size: cover;
-    /* display: flex; */
-
-
+    background: url("https://external-preview.redd.it/NXrR_qnMRHrwUoE8pbeiX26fq4mNctFsmdEghRVApSQ.jpg?auto=webp&s=b18e1b0df84f417036d4e1ac0affb6245a071ebf")no-repeat;
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.pokedex {
+.pokedex{
+   display: flex;
+   position: relative;
     padding: 0;
+
+    margin: 0;
+}
+
+.buscar{
+    display: flex;
     position: absolute;
-    width: 758px;
-    height: 512px;
-    background: url(../img/pokedex.png)no-repeat;
+    top: 20px;
+    left: 450px;
+    border: 2px solid red;
+    width: 100px;
+    height: 60px;
 }
+.info-pokemon{
+    display: flex;
+    position: absolute;
 
-#img_pokemon {
-
-    border-radius: 30px;
-    position: fixed;
-    height: 140px;
-    width: 250px;
-    left: 69px;
-    top: 167px;
-}
-
-#id {
-    font-family: 'Pokemon Solid', sans-serif;
-    font-size: 25px;
-    font-weight: 800;
-    position: fixed;
-
-    left: 165px;
-    top: 425px;
-}
-
-#nome {
-    font-size: 25px;
-    position: fixed;
-    left: 540px;
-    top: 200px;
-}
-#type{
-    font-size: 25px;
-    position: fixed;
-    left: 540px;
-    top: 150px;
-}
-
-.buscar {
-    position: fixed;
-    width: 400px;
-    left: 426px;
-    top: 10px;
-}
-
-#nextButton {
-    background: none;
-    position: fixed;
-    width: 25px;
-    height: 25px;
-    left: 323px;
-    top: 431px;
-}
-
-#backButton {
-    background: none;
-    position: fixed;
-    width: 25px;
-    height: 25px;
-    left: 260px;
-    top: 431px;
-}
-
-#ButtonPower {
-    border-radius: 10px;
-    background: none;
-    position: fixed;
+    /* background-color: aqua; */
+    /* margin: 0;
+    border: 0;
+    padding: 0;
     width: 50px;
-    height: 15px;
-    left: 121px;
-    top: 405px;
+    height: 50px;
+    top: 150px;
+    left: 200px; */
 }
-
-
-
-#butt_img_front {
-    background: none;
-    position: fixed;
-    width: 25px;
-    height: 25px;
-    left: 294px;
-    top: 400px;
+#bg_pokemon{
+    background: url(../img/background.jpeg) no-repeat;
+    display: flex;
+    background-color: rgba(33, 33, 234, 0.5);
+    position: relative;
+    border: 3px black solid;
+    border-radius: 20px;
+    top: 158px;
+    left: 61px;
+    width: 260px;
+    height: 144px;
 }
-
-#butt_img_back {
-    background: none;
-    position: fixed;
-    width: 25px;
-    height: 25px;
-    left: 293px;
-    top: 462px;
+#img_pokemon{
+    display: flex;
+    border: none;
+    position: absolute;
+    border-radius: 24px;
+    top: 165px;
+    left: 130px;
+    width: 150px;
+    height: 134px;
+}
+.button-pokemon{
+    display: flex;
+    position: absolute;
+ 
 }

@@ -18,7 +18,7 @@ function buscarPokemon(paramater) {
   }
   if (paramater == "img_back") {
     var id = document.getElementById("id").textContent;
-    var url_img_back = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`;
+    var url_img_back = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/${id}.gif`;
     document.getElementById("img_pokemon").src = url_img_back;
 
     return;
@@ -37,6 +37,8 @@ function buscarPokemon(paramater) {
       document.getElementById("id").textContent = data.id;
       // var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
       var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`;
+      var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${data.id}.gif`;
+      https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/132.gif
       
       console.log(data.types[0].type.name)
       document.getElementById("type").textContent = data.types[0].type.name;
