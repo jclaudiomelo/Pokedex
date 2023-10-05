@@ -1,4 +1,5 @@
 function buscarPokemon(paramater) {
+  
   if (paramater == "buscar") {
     var id = document.getElementById("buscar").value;
   }
@@ -11,10 +12,11 @@ function buscarPokemon(paramater) {
     id--;
   }
   if (paramater == "ligar") {
+    
     id = 1;
   }
   if (id == 0) {
-    pokeapi("ligar");
+    buscarPokemon("ligar");
   }
   if (paramater == "img_back") {
     var id = document.getElementById("id").textContent;
