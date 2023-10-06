@@ -1,6 +1,176 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-*{
-    
-    /* font-family: 'Pokemon Solid', sans-serif; */
+
+span {
+    border-radius: 6px 6px 6px 6px;
+
+
 }
 
+/* style.css */
+#nome,
+#ability,
+#type,#id{
+    display: flexbox;
+    position: relative;
+    justify-content: center;
+    font-family: "arial", arial, sans-serif;
+    border-radius: 5px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+#nome {
+    background-color: antiquewhite;
+    top: -5px;
+    left: 455px;
+}
+
+#ability {
+    background-color: aqua;
+    top: 70px;
+    left: 278px;
+}
+
+#type {
+    top: 70px;
+    left: 630px;
+
+}
+
+#id {
+    display: flex;
+    position: absolute;
+    top: 445px;
+    left: 165px;
+
+}
+
+#type[content="grass"] {
+    background-color: green;
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="fire"] {
+    background-color: rgb(250, 42, 6);
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="normal"] {
+    background-color: rgb(243, 210, 204);
+    color: black;
+    /* Texto preto para contraste */
+}
+
+#type[content="fighting"] {
+    background-color: rgb(113, 109, 108);
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="poison"] {
+    background-color: purple;
+    color: aliceblue;
+    /* Ou outra cor clara para contraste */
+}
+
+#type[content="bug"] {
+    background-color: rgb(199, 133, 242);
+    color: black;
+    /* Ou outra cor escura para contraste */
+}
+
+#type[content="ground"] {
+    background-color: brown;
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="rock"] {
+    background-color: gray;
+    color: black;
+    /* Ou outra cor escura para contraste */
+}
+
+#type[content="ghost"] {
+    background-color: darkslategray;
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="water"] {
+    background-color: blue;
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="electric"] {
+    background-color: yellow;
+    color: black;
+    /* Ou outra cor escura para contraste */
+}
+
+#type[content="psychic"] {
+    background-color: pink;
+    color: black;
+    /* Ou outra cor escura para contraste */
+}
+
+#type[content="ice"] {
+    background-color: lightblue;
+    color: black;
+    /* Ou outra cor escura para contraste */
+}
+
+#type[content="dragon"] {
+    background-color: orange;
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="dark"] {
+    background-color: darkred;
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="unknown"] {
+    background-color: rgb(105, 105, 105);
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="shadow"] {
+    background-color: black;
+    color: white;
+    /* Texto branco para contraste */
+}
+
+#type[content="Fairy"] {
+    background-color: rgb(194, 184, 126);
+    color: black;
+    /* Ou outra cor escura para contraste */
+}
+
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para a imagem no modal */
+#modalImage {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
