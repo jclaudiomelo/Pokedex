@@ -1,61 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
+    <title>Pokedex-Closed</title>
     <link rel="stylesheet" href="ASSETS/css/style.css" />
     <link rel="stylesheet" href="ASSETS/css/global.css" />
     <link rel="stylesheet" href="ASSETS/css/button.css" />
-    <link
-      href="https://fonts.cdnfonts.com/css/pokemon-solid"
-      rel="stylesheet"
-    />
   </head>
+  <body>
 
-  <body onload="buscarPokemon('ligar')">
-    
     <div class="pokedex">
-      <img src="ASSETS/img/pokedex.png" alt="" class="pokedex" />
-
-      <div class="buscar">
-        <input id="buscar" placeholder="Buscar Pokemon" type="text" />
-        <button id="bbuscar" onclick="buscarPokemon('buscar')">Buscar</button>
+      <div>
+        <img src="ASSETS/img/pokedex-closed.png" alt="" />
       </div>
-
-      <div class="closed-poke">
-        <a href="index-closed.html">
-          <img src="" alt="" />
-        </a>
-      </div>
-
-      <div class="info-pokemon">
-        <img id="bg_pokemon" width="220" height="140" />
-        <img id="img_pokemon" />
-        <span id="type">tipo</span>
-        <span id="nome">nome</span>
-        <span id="id">id</span>
-      </div>
-
-      <div class="button-pokemon" style="text-transform: capitalize">
-        <button id="nextButton" onclick="buscarPokemon('next')"></button>
-        <button id="backButton" onclick="buscarPokemon('prev')"></button>
-        <button id="ButtonPower" onclick="buscarPokemon('ligar')">Reset</button>
-        <button id="butt_img_back" onclick="buscarPokemon('img_back')"></button>
-        <button
-          id="butt_img_front"
-          onclick="buscarPokemon('img_front')"
-        ></button>
-      </div>
-      <div class="closed-poke">
-        <a href="index-closed.html">
-          <button id="off">Desligar</button>
+      <div class="tampa_poke">
+        <a href="index-open.html">
+          <img id="button_open" src="ASSETS/img/open.png"  alt="" />
         </a>
       </div>
     </div>
 
     <script src="ASSETS/js/app.js">
-     
+      
     </script>
   </body>
 </html>

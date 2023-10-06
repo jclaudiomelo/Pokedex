@@ -1,11 +1,11 @@
 #nextButton {
     background: none;
     border-radius: 0px 06px 6px 0px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
     display: flex;
     position: absolute;
-    top: 407px;
-    left: 508px;
+    top: 405px;
+    left: 506px;
     width: 40px;
     height: 32px;
 }
@@ -13,11 +13,11 @@
 #backButton {
     background: none;
     border-radius: 06px 0px 0px 6px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
     display: flex;
     position: absolute;
-    top: 407px;
-    left: 465px;
+    top: 405px;
+    left: 463px;
     width: 40px;
     height: 32px;
 }
@@ -29,28 +29,36 @@
     font-weight: 600;
     background: none;
     border-radius: 6px 6px 6px 6px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
     position: absolute;
-    top: 399px;
+    top: 400px;
     left: 113px;
-    width: 53px;
-    height: 14px;
+    width: 51px;
+    height: 13px;
 }
 
 #butt_img_back {
     background: none;
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 2px 2px 10px black;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
     display: flex;
     position: absolute;
     top: 390px;
-    left: 275px;
-    width: 40px;
-    height: 40px;
+    left: 281px;
+    width: 33px;
+    height: 33px;
 }
 
 #butt_img_front {
-
+    background: none;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
+    display: flex;
+    position: absolute;
+    top: 450px;
+    left: 281px;
+    width: 33px;
+    height: 33px;
 }
 
 #bbuscar {
@@ -60,14 +68,27 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    border-radius: 6px 6px 6px 6px;
+    border-radius: 8px 8px 8px 8px;
     box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
     display: flex;
     position: absolute;
-    top: 427px;
-    left: 146px;
+    top: 429px;
+    left: 150px;
     width: 100px;
-    height: 40px;
+    height: 41px;
+}
+input::placeholder {
+    color: rgb(255, 255, 255);
+  }
+#buscar{
+    display: flex;
+    position: absolute;
+    background: none;
+    border-radius: 8px 8px 8px 8px;
+    top: 70px;
+    left: -10px;
+    width: 120px;
+    height: 31px;
 }
 
 #button_open{
@@ -83,11 +104,10 @@
     font-weight: 600;
     background: none;
     border-radius: 6px 6px 6px 6px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 399px;
     left: 177px;
     width: 53px;
     height: 14px;
 }
-    
