@@ -23,48 +23,11 @@ body {
     width: 100px;
     height: 60px;
 }
-#light{
-    display: flex;
-    position: absolute;
-    top: 15px;
-    left: 26px;
-}
-/* #type{
-    display: flex;
-    position: absolute;
-    top: 190px;
-    left: 565px;
-} */
-/* #nome{
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 565px;
-} */
-#id{
-    display: flex;
-    position: absolute;
-    top: 450px;
-    left: 165px;
 
-}
+
 .info-pokemon {
-    /* display: flex; */
     position: absolute;
-    /* border: 2px red solid;
-    background-color: none;
-    margin: 0%;
-    border: none;
-    outline: 0; */
 
-    /* background-color: aqua; */
-    /* margin: 0;
-    border: 0;
-    padding: 0;
-    width: 50px;
-    height: 50px;
-    top: 150px;
-    left: 200px; */
 }
 
 #bg_pokemon {
@@ -81,19 +44,11 @@ body {
 #img_pokemon {
     position: absolute;
     top: 160px;
-    left: 130px;
+    left: 120px;
     width: auto;
     height: 134px;
 }
 
 
 /* CLASSIC CSS*/
-
-#img_pokemon-classic{
-    position: absolute;
-    top: 163px;
-    left: 80px;
-    width: 230px;
-    height: 124px;
-}
 
