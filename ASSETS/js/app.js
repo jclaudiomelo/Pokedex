@@ -60,10 +60,10 @@ function buscarPokemon(paramater) {
 function redirecionarComBaseNaOrientacao() {
   if (window.innerHeight > window.innerWidth) {
     // Se a altura for maior que a largura, estamos na orientação vertical
-    window.location.href = 'index.html';
+    window.location.href = 'index-open.html';
   } else {
     // Caso contrário, estamos na orientação horizontal
-    window.location.href =  'index-open.html';
+    window.location.href =  'index.html';
   }
 }
 
