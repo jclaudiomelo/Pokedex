@@ -77,10 +77,12 @@
     width: 100px;
     height: 41px;
 }
+
 input::placeholder {
     color: rgb(255, 255, 255);
-  }
-#buscar{
+}
+
+#buscar {
     display: flex;
     position: absolute;
     background: none;
@@ -91,13 +93,14 @@ input::placeholder {
     height: 31px;
 }
 
-#button_open{
+#button_open {
     position: absolute;
     left: 17px;
     top: 225px;
- 
+
 }
-#off{
+
+#off {
     align-items: center;
     justify-content: center;
     font-size: 10px;
@@ -110,4 +113,39 @@ input::placeholder {
     left: 177px;
     width: 53px;
     height: 14px;
+}
+
+/* CLASSIC CSS */
+#normal {
+    background: none;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
+    display: flex;
+    position: absolute;
+    top: 274px;
+    left: 512px;
+    width: 50px;
+    height: 40px;
+}
+#new {
+    background: none;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
+    display: flex;
+    position: absolute;
+    top: 274px;
+    left: 463px;
+    width: 50px;
+    height: 40px;
+}
+#classic {
+    background: none;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
+    display: flex;
+    position: absolute;
+    top: 274px;
+    left: 564px;
+    width: 50px;
+    height: 40px;
 }

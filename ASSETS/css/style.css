@@ -85,3 +85,15 @@ body {
     width: auto;
     height: 134px;
 }
+
+
+/* CLASSIC CSS*/
+
+#img_pokemon-classic{
+    position: absolute;
+    top: 163px;
+    left: 80px;
+    width: 230px;
+    height: 124px;
+}
+

@@ -13,23 +13,20 @@
     />
   </head>
 
-  <body onload="buscarPokemon('ligar')">
+  <body onload="buscarClassic('ligar')">
     <div class="pokedex">
       <img src="ASSETS/img/pokedex.png" alt="" class="pokedex" />
 
       <div class="buscar">
         <input
           id="buscar"
-          placeholder="Id or PokeName"
-          type="text"
-          alt="Id ou Nome"
-        />
-        <button id="bbuscar" onclick="buscarPokemon('buscar')">Buscar</button>
+          placeholder="Id or PokeName"type="text" alt="Id ou Nome"/>
+        <button id="bbuscar" onclick="buscarClassic('buscar')">Buscar</button>
       </div>
 
-         <div class="info-pokemon">
+       <div class="info-pokemon">
         <img id="bg_pokemon" width="220" height="140" />
-        <img id="img_pokemon" />
+        <img id="img_pokemon-classic"/>
         <div class="stats_poke">
           <span id="type" content=""></span>
           <span id="nome"></span>
@@ -38,28 +35,29 @@
       </div>
 
       <div class="button-pokemon" style="text-transform: capitalize">
-         <button id="nextButton" onclick="buscarPokemon('next')"></button>
-        <button id="backButton" onclick="buscarPokemon('prev')"></button>
-        <button id="ButtonPower" onclick="buscarPokemon('ligar')">Reset</button>
-        <button id="butt_img_back" onclick="buscarPokemon('img_back')"></button>
+        <button id="nextButton" onclick="buscarClassic('next')"></button>
+        <button id="backButton" onclick="buscarClassic('prev')"></button>
+        <button id="ButtonPower" onclick="buscarClassic('ligar')">Reset</button>
+        <button id="butt_img_back" onclick="buscarClassic('img_back')"></button>
         <button
           id="butt_img_front"
-          onclick="buscarPokemon('img_front')"
+          onclick="buscarClassic('img_front')"
         ></button>
       </div>
       <div class="closed-poke">
         <a href="index.html">
           <button id="off">Desligar</button>
         </a>
-        <a href="classic.html">
-          <button id="classic">classic</button>
+        <a href="index-open.html">
+          <button id="normal">normal</button>
         </a>
         <a href="new.html">
           <button id="new">new</button>
-          <a href="index-open.html">
-            <button id="normal">normal</button>
-          </a>
         </a>
+        <a href="classic.html">
+          <button id="classic">classic</button>
+        </a>
+      </div>
       </div>
     </div>
 
