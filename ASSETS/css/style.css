@@ -29,18 +29,18 @@ body {
     top: 15px;
     left: 26px;
 }
-#type{
+/* #type{
     display: flex;
     position: absolute;
     top: 190px;
     left: 565px;
-}
-#nome{
+} */
+/* #nome{
     display: block;
     position: relative;
     top: 0px;
     left: 565px;
-}
+} */
 #id{
     display: flex;
     position: absolute;

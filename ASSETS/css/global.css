@@ -3,76 +3,118 @@
 span {
     border-radius: 6px 6px 6px 6px;
 
+
 }
+
 /* style.css */
+#nome {
+    background-color: antiquewhite;
+    display: flex;
+    position: fixed;
+    top: 149px;
+    left: 555px;
+    justify-content: center;
+    font-family: "Flexo-Medium", arial, sans-serif;
+    border-radius: 5px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+#ability {
+    display: flex;
+    position: fixed;
+    top: 230px;
+    left: 505px;
+    justify-content: center;
+    font-family: "Flexo-Medium", arial, sans-serif;
+    border-radius: 5px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+#type {
+    display: flex;
+    position: fixed;
+    top: 205px;
+    left: 505px;
+    justify-content: center;
+    font-family: "Flexo-Medium", arial, sans-serif;
+    border-radius: 5px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
 
 #type[content="grass"] {
     background-color: green;
-  }
-  
-  #type[content="fire"] {
+}
+
+#type[content="fire"] {
     background-color: rgb(250, 42, 6);
-  }
-  
-  #type[content="normal"] {
+}
+
+#type[content="normal"] {
     background-color: rgb(243, 210, 204);
-  }
-  
-  #type[content="fighting"] {
+}
+
+#type[content="fighting"] {
     background-color: rgb(113, 109, 108);
-  }
-  
-  #type[content="poison"] {
-    background-color: purple; 
-  }
-  
-  #type[content="ground"] {
-    background-color: brown; 
-  }
-  
-  #type[content="rock"] {
+}
+
+#type[content="poison"] {
+    background-color: purple;
+}
+
+#type[content="ground"] {
+    background-color: brown;
+}
+
+#type[content="rock"] {
     background-color: gray;
-  }
-  
-  #type[content="ghost"] {
+}
+
+#type[content="ghost"] {
     background-color: darkslategray;
-  }
-  
-  #type[content="water"] {
+}
+
+#type[content="water"] {
     background-color: blue;
-  }
-  
-  #type[content="electric"] {
+}
+
+#type[content="electric"] {
     background-color: yellow;
-  }
-  
-  #type[content="psychic"] {
+}
+
+#type[content="psychic"] {
     background-color: pink;
-  }
-  
-  #type[content="ice"] {
+}
+
+#type[content="ice"] {
     background-color: lightblue;
-  }
-  
-  #type[content="dragon"] {
+}
+
+#type[content="dragon"] {
     background-color: orange;
-  }
-  
-  #type[content="dark"] {
-    background-color: darkred; 
-  }
-  
-  #type[content="unknown"] {
-    background-color: rgb(105, 105, 105); 
-  }
-  
-  #type[content="shadow"] {
+}
+
+#type[content="dark"] {
+    background-color: darkred;
+}
+
+#type[content="unknown"] {
+    background-color: rgb(105, 105, 105);
+}
+
+#type[content="shadow"] {
     background-color: black;
-  }
-  #type[content="Fairy"] {
+}
+
+#type[content="Fairy"] {
     background-color: rgb(194, 184, 126);
-  }
-  
+}
+
 
 /* Estilos para o modal */
 .modal {
@@ -84,13 +126,12 @@ span {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-  }
-  
-  /* Estilos para a imagem no modal */
-  #modalImage {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para a imagem no modal */
+#modalImage {
     display: block;
     margin: 0 auto;
     cursor: pointer;
-  }
-  
+}

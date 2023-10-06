@@ -33,17 +33,14 @@ function buscarPokemon(paramater) {
   fetch(url)
     .then((resp) => resp.json())
     .then((data) => {
+      
       document.getElementById("nome").textContent = data.name;
       document.getElementById("id").textContent = data.id;
       var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${data.id}.gif`;
-
-      https: console.log(data.types[0].type.name);
-      document.getElementById("type").textContent = data.types[0].type.name;
-
-      document
-        .getElementById("type")
-        .setAttribute("content", data.types[0].type.name);
-
+      document.getElementById("ability").textContent = data.abilities[0].ability.name
+     
+      tp = document.getElementById("type").textContent = data.types[0].type.name;
+      document.getElementById("type").setAttribute("content", tp);
       document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {
@@ -72,7 +69,7 @@ function buscarYellow(paramater) {
     buscarYellow("ligar");
   }
   if (paramater == "img_back") {
-    debugger
+    
     var id = document.getElementById("id").textContent;
     document.getElementById("img_pokemon").src = "../img/img_not_found.png";
     return;
@@ -90,10 +87,8 @@ function buscarYellow(paramater) {
       document.getElementById("nome").textContent = data.name;
       document.getElementById("id").textContent = data.id;
       var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
-      document.getElementById("type").textContent = data.types[0].type.name;
-      document
-        .getElementById("type")
-        .setAttribute("content", data.types[0].type.name);
+      tp = document.getElementById("type").textContent = data.types[0].type.name;
+      document.getElementById("type").setAttribute("content", tp);
       document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {
@@ -139,10 +134,8 @@ function buscarnew(paramater) {
       document.getElementById("nome").textContent = data.name;
       document.getElementById("id").textContent = data.id;
       var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`;
-      document.getElementById("type").textContent = data.types[0].type.name;
-      document
-        .getElementById("type")
-        .setAttribute("content", data.types[0].type.name);
+      tp = document.getElementById("type").textContent = data.types[0].type.name;
+      document.getElementById("type").setAttribute("content", tp);
       document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {
@@ -154,11 +147,11 @@ function buscarnew(paramater) {
 //VERIFICAR ORIENTAÇÃO
 function redirecionarComBaseNaOrientacao() {
   if (window.innerHeight > window.innerWidth) {
-    // Se a altura for maior que a largura, estamos na orientação vertical
-    window.location.href = "index-open.html";
+    // vertical
+    window.location.href = "/API-POKEMON/ASSETS/html/index-open.html";
   } else {
-    // Caso contrário, estamos na orientação horizontal
-    window.location.href = "index.html";
+    // horizontal
+    window.location.href = "/API-POKEMON/index.html";
   }
 }
 window.addEventListener("orientationchange", redirecionarComBaseNaOrientacao);
