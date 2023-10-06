@@ -44,14 +44,19 @@ function buscarPokemon(paramater) {
       
       console.log(data.types[0].type.name)
       document.getElementById("type").textContent = data.types[0].type.name;
+      
+     document.getElementById("type").setAttribute("content", data.types[0].type.name);
+
+     
       document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {
-      alert(error);
+      alert("Digite um ID ou PokeName");
+      console.log(error)
     });
 }
 
-
+//VERIFICAR ORIENTAÇÃO 
 function redirecionarComBaseNaOrientacao() {
   if (window.innerHeight > window.innerWidth) {
     // Se a altura for maior que a largura, estamos na orientação vertical
@@ -65,10 +70,3 @@ function redirecionarComBaseNaOrientacao() {
 window.addEventListener('orientationchange', redirecionarComBaseNaOrientacao);
 
 
-
-// if(window.location.href == 'index.html' && window.innerHeight > window.innerWidth){
-//   window.location.href = 'index-closed.html';
- 
-// }if(window.location.href == 'index-close.html' && window.innerHeight < window.innerWidth){
-//   window.location.href = 'index.html';
-// }

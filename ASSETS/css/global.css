@@ -1,6 +1,75 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-*{
-    
-    /* font-family: 'Pokemon Solid', sans-serif; */
-}
 
+span {
+    border-radius: 6px 6px 6px 6px;
+
+}
+/* style.css */
+
+#type[content="grass"] {
+    background-color: green;
+  }
+  
+  #type[content="fire"] {
+    background-color: rgb(250, 42, 6);
+  }
+  
+  #type[content="normal"] {
+    background-color: rgb(243, 210, 204);
+  }
+  
+  #type[content="fighting"] {
+    background-color: rgb(113, 109, 108);
+  }
+  
+  #type[content="poison"] {
+    background-color: purple; 
+  }
+  
+  #type[content="ground"] {
+    background-color: brown; 
+  }
+  
+  #type[content="rock"] {
+    background-color: gray;
+  }
+  
+  #type[content="ghost"] {
+    background-color: darkslategray;
+  }
+  
+  #type[content="water"] {
+    background-color: blue;
+  }
+  
+  #type[content="electric"] {
+    background-color: yellow;
+  }
+  
+  #type[content="psychic"] {
+    background-color: pink;
+  }
+  
+  #type[content="ice"] {
+    background-color: lightblue;
+  }
+  
+  #type[content="dragon"] {
+    background-color: orange;
+  }
+  
+  #type[content="dark"] {
+    background-color: darkred; 
+  }
+  
+  #type[content="unknown"] {
+    background-color: rgb(105, 105, 105); 
+  }
+  
+  #type[content="shadow"] {
+    background-color: black;
+  }
+  #type[content="Fairy"] {
+    background-color: rgb(194, 184, 126);
+  }
+  

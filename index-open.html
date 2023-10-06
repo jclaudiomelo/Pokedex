@@ -18,7 +18,12 @@
       <img src="ASSETS/img/pokedex.png" alt="" class="pokedex" />
 
       <div class="buscar">
-        <input id="buscar" placeholder="Id or PokeName" type="text" alt="Id ou Nome"/>
+        <input
+          id="buscar"
+          placeholder="Id or PokeName"
+          type="text"
+          alt="Id ou Nome"
+        />
         <button id="bbuscar" onclick="buscarPokemon('buscar')">Buscar</button>
       </div>
 
@@ -31,13 +36,14 @@
       <div class="info-pokemon">
         <img id="bg_pokemon" width="220" height="140" />
         <img id="img_pokemon" />
-        <span id="type">tipo</span>
-        <span id="nome">nome</span>
-        <span id="id">id</span>
+        <div class="stats_poke">
+          <span id="type" content=""></span>
+          <span id="nome"></span>
+          <span id="id"></span>
+        </div>
       </div>
 
       <div class="button-pokemon" style="text-transform: capitalize">
-        
         <button id="nextButton" onclick="buscarPokemon('next')"></button>
         <button id="backButton" onclick="buscarPokemon('prev')"></button>
         <button id="ButtonPower" onclick="buscarPokemon('ligar')">Reset</button>
