@@ -36,9 +36,9 @@ body {
     left: 565px;
 }
 #nome{
-    display: flex;
-    position: absolute;
-    top: 150px;
+    display: block;
+    position: relative;
+    top: 0px;
     left: 565px;
 }
 #id{

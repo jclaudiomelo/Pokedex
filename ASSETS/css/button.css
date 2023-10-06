@@ -138,7 +138,7 @@ input::placeholder {
     width: 50px;
     height: 40px;
 }
-#classic {
+#yellow {
     background: none;
     border-radius: 6px 6px 6px 6px;
     box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
@@ -149,3 +149,21 @@ input::placeholder {
     width: 50px;
     height: 40px;
 }
+#classic{
+    background: none;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: -5px 4px 9px rgba(0, 0, 0, 0.7);
+    display: flex;
+    position: absolute;
+    top: 274px;
+    left: 664px;
+    width: 50px;
+    height: 40px;
+}
+
+
+
+
+
+
+

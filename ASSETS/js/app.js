@@ -1,5 +1,4 @@
 function buscarPokemon(paramater) {
-  
   if (paramater == "buscar") {
     var id = document.getElementById("buscar").value;
   }
@@ -12,7 +11,6 @@ function buscarPokemon(paramater) {
     id--;
   }
   if (paramater == "ligar") {
-    
     id = 1;
   }
   if (id == 0) {
@@ -37,28 +35,25 @@ function buscarPokemon(paramater) {
     .then((data) => {
       document.getElementById("nome").textContent = data.name;
       document.getElementById("id").textContent = data.id;
-      // var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
-      
       var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${data.id}.gif`;
-      https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/132.gif
-      
-      console.log(data.types[0].type.name)
-      document.getElementById("type").textContent = data.types[0].type.name;
-      
-     document.getElementById("type").setAttribute("content", data.types[0].type.name);
 
-     
+      https: console.log(data.types[0].type.name);
+      document.getElementById("type").textContent = data.types[0].type.name;
+
+      document
+        .getElementById("type")
+        .setAttribute("content", data.types[0].type.name);
+
       document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {
-      alert("Digite um ID ou PokeName");
-      console.log(error)
+      mostrarModalDeErro();
+      console.log(error);
     });
 }
 
-
 //classic
-function buscarClassic(paramater) {
+function buscarYellow(paramater) {
   if (paramater == "buscar") {
     var id = document.getElementById("buscar").value;
   }
@@ -74,13 +69,12 @@ function buscarClassic(paramater) {
     id = 1;
   }
   if (id == 0) {
-    buscarClassic("ligar");
+    buscarYellow("ligar");
   }
   if (paramater == "img_back") {
+    debugger
     var id = document.getElementById("id").textContent;
-    var url_img_back = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/${id}.gif`;
-    document.getElementById("img_pokemon").src = url_img_back;
-
+    document.getElementById("img_pokemon").src = "../img/img_not_found.png";
     return;
   }
   if (paramater == "img_front") {
@@ -95,30 +89,21 @@ function buscarClassic(paramater) {
     .then((data) => {
       document.getElementById("nome").textContent = data.name;
       document.getElementById("id").textContent = data.id;
-      var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
-      // var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`;
-      // var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${data.id}.gif`;
-      //raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/132.gif
-
-      https: console.log(data.types[0].type.name);
+      var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
       document.getElementById("type").textContent = data.types[0].type.name;
-
       document
         .getElementById("type")
         .setAttribute("content", data.types[0].type.name);
-
-      document.getElementById("img_pokemon-classic").src = url_img;
+      document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {
-      alert("Digite um ID ou PokeName");
       console.log(error);
+      mostrarModalDeErro();
     });
 }
 
 //new
-
 function buscarnew(paramater) {
-    
   if (paramater == "buscar") {
     var id = document.getElementById("buscar").value;
   }
@@ -138,9 +123,7 @@ function buscarnew(paramater) {
   }
   if (paramater == "img_back") {
     var id = document.getElementById("id").textContent;
-    var url_img_back = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/${id}.gif`;
-    document.getElementById("img_pokemon").src = url_img_back;
-
+    document.getElementById("img_pokemon").src = "../img/img_not_found.png";
     return;
   }
   if (paramater == "img_front") {
@@ -156,33 +139,38 @@ function buscarnew(paramater) {
       document.getElementById("nome").textContent = data.name;
       document.getElementById("id").textContent = data.id;
       var url_img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`;
-      
-      
-      console.log(data.types[0].type.name)
       document.getElementById("type").textContent = data.types[0].type.name;
-      
-     document.getElementById("type").setAttribute("content", data.types[0].type.name);
-
-     
+      document
+        .getElementById("type")
+        .setAttribute("content", data.types[0].type.name);
       document.getElementById("img_pokemon").src = url_img;
     })
     .catch((error) => {
-      alert("Digite um ID ou PokeName");
-      console.log(error)
+      mostrarModalDeErro();
+      console.log(error);
     });
 }
 
-//VERIFICAR ORIENTAÇÃO 
+//VERIFICAR ORIENTAÇÃO
 function redirecionarComBaseNaOrientacao() {
   if (window.innerHeight > window.innerWidth) {
     // Se a altura for maior que a largura, estamos na orientação vertical
-    window.location.href = 'index-open.html';
+    window.location.href = "index-open.html";
   } else {
     // Caso contrário, estamos na orientação horizontal
-    window.location.href =  'index.html';
+    window.location.href = "index.html";
   }
 }
+window.addEventListener("orientationchange", redirecionarComBaseNaOrientacao);
 
-window.addEventListener('orientationchange', redirecionarComBaseNaOrientacao);
+//modal erro
+var modal = document.getElementById("myModal");
+var modalImage = document.getElementById("modalImage");
 
+modalImage.onclick = function () {
+  modal.style.display = "none";
+};
 
+function mostrarModalDeErro() {
+  modal.style.display = "block";
+}
