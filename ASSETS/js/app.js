@@ -63,7 +63,7 @@ function redirecionarComBaseNaOrientacao() {
     window.location.href = 'index.html';
   } else {
     // Caso contrário, estamos na orientação horizontal
-    window.location.href =  'index-closed.html';
+    window.location.href =  'index-open.html';
   }
 }
 
