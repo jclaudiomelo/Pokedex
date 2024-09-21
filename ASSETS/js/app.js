@@ -148,7 +148,7 @@ function buscarnew(paramater) {
 function redirecionarComBaseNaOrientacao() {
   if (window.innerHeight > window.innerWidth) {
     // vertical
-    window.location.href = "";
+    window.location.href = "/Pokedex/ASSETS/html/index-open.html";
   } else {
     // horizontal
     window.location.href = "/Pokedex/index.html";
