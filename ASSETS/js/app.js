@@ -148,10 +148,10 @@ function buscarnew(paramater) {
 function redirecionarComBaseNaOrientacao() {
   if (window.innerHeight > window.innerWidth) {
     // vertical
-    window.location.href = "index.html";
+    window.location.href = "";
   } else {
     // horizontal
-    window.location.href = "/ASSETS/html/index-open.html";
+    window.location.href = "/Pokedex/index.html";
   }
 }
 window.addEventListener("orientationchange", redirecionarComBaseNaOrientacao);
